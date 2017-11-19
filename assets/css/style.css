@@ -1,0 +1,48 @@
+body {
+	background-image: url("../images/intersection.png");
+}
+
+#title {
+	height: 100px;
+	width: 280px;
+	text-align: center;
+	
+	background-color: #A2531D;
+}
+
+#instructions {
+	height: 400px;
+	width: 320px;
+	color: green;
+	background-color: yellow;
+}
+
+#solution {
+	height: 120px;
+	width: 60px;
+	background-color: red;
+}
+
+#wins-losses {
+	height: 120px;
+	width: 60px;
+	background-color: green;
+}
+
+#pics {
+	height: 120px;
+	width: 60px;
+	background-color: white;
+}
+
+#score-text {
+	height: 120px;
+	width: 60px;
+	background-color: brown;
+}
+
+#score-number {
+	height: 120px;
+	width: 60px;
+	background-color: purple;
+}
