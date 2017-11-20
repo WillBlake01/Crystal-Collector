@@ -20,37 +20,46 @@ var scoreReset = 0;
 var score = "";
 var wins = "";
 var losses = "";
-var redGem = "";
-var greenGem = "";
-var blueGem = "";
-var pinkGem = "";
+
 //Set gem values
-var gemsRandom = gemValue[Math.floor(Math.random()*gemValue.length -1)];
-var pickSolution = solutionValue[Math.floor(Math.random()*solutionValue.length -1)];
+var redValue = gemValue[Math.floor(Math.random()*gemValue.length)];
+var greenValue = gemValue[Math.floor(Math.random()*gemValue.length)];
+var blueValue = gemValue[Math.floor(Math.random()*gemValue.length)];
+var pinkValue = gemValue[Math.floor(Math.random()*gemValue.length)];
+var pickSolution = solutionValue[Math.floor(Math.random()*solutionValue.length)];
 
 //Assign a solution
-$("button").on("click", function() {
+$("button").on("click", function solution () {
 	$("div#solution").html("<h1>" + pickSolution + "</h1>");
 });
 
 //Assign to buttons
-$("button#red-gem").on("click", function() {
-	$("div#score-number").html("<h1>" + score + gemsRandom + "</h1>");
-})
+$("button#red-gem").on("click", function redclick () {
+	score = (score + parseInt(redValue));
+	$("div#score-number").html("<h1>" + score + "</h1>");
+	console.log(redValue);
+	console.log(score);
+});
 
-$("button#green-gem").on("click", function() {
-	$("div#score-number").html("<h1>" + score + gemsRandom + "</h1>");
-})
+$("button#green-gem").on("click", function greenclick () {
+	score = (score + parseInt(greenValue));
+	$("div#score-number").html("<h1>" + score + "</h1>");
+	console.log(greenValue);
+});
 
-$("button#blue-gem").on("click", function() {
-	$("div#score-number").html("<h1>" + score + gemsRandom + "</h1>");
-})
+$("button#blue-gem").on("click", function blueclick () {
+	score = (score + parseInt(blueValue));
+	$("div#score-number").html("<h1>" + score + "</h1>");
+	console.log(blueValue);
+});
 
-$("button#pink-gem").on("click", function() {
-	$("div#score-number").html("<h1>" + score + gemsRandom + "</h1>");
-})
+$("button#pink-gem").on("click", function pinkclick () {
+	score = (score + parseInt(pinkValue));
+	$("div#score-number").html("<h1>" + score + "</h1>");
+	console.log(pinkValue);
+});
 
-//Display users current score
+//Reset score to zero
 $("div#score-number").html("<h1>" + scoreReset + "</h1>");
 
-})
+});
