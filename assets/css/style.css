@@ -10,6 +10,7 @@ body {
 	height: 100px;
 	width: 280px;
 	text-align: center;
+	padding: 10px;
 	color: white;
 	background-color: #A2531D;
 	margin-bottom: 10px;
@@ -52,20 +53,16 @@ body {
 	margin-bottom: 10px;
 }
 
-#red-gem {
-
-}
-
 #score-text {
 	height: 40px;
 	width: 260px;
-	background-color: brown;
 	margin-bottom: 10px;
-
+	background-color: purple;
 }
 
 #score-number {
 	height: 160px;
 	width: 260px;
+	padding: 1px;
 	background-color: purple;
 }
