@@ -11,6 +11,7 @@
 </head>
 
 <body>
+<container>
 
 <!-- //Game title -->
 	<div id="title">
@@ -20,19 +21,11 @@
 <!-- //Instructions -->
 	<div id="instructions">
 		<br>
-		You will be given a random number at the start of the game.
-		<br>
-		<br>
-		There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-		<br>
-		<br>
-		You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.
-		<br>
-		<br>
-		The value of each crystal is hidden from you until you click on it.
-		<br>
-		<br>
-		Each time when the game starts, the game will change the value of each crystal.
+		<h3>You will be given a random number at the start of the game.</h3>
+		<h3>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</h3>
+		<h3>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</h3>
+		<h3>The value of each crystal is hidden from you until you click on it.</h3>
+		<h3>Each time when the game starts, the game will change the value of each crystal.</h3>
 	</div>
 
 <!-- //Solution number -->
@@ -42,30 +35,49 @@
 
 <!-- //Score count -->
 	<div id="wins-losses">
-		Wins:
+		<div id="result">
+			
+		</div>
+		<h3>Wins:</h3>
 		<br>
-		Losses:
+		<h3>Losses:</h3>
 	</div>
 
 <!-- //Gem pics -->
 	<div id="pics">
+		<button type="button" id="red-gem">
+			<img src="assets/images/red-gem.jpg" height="120" width="120">
+		</button>
+			
+		<button type="button">
+			<img src="assets/images/green-gem.jpg" height="120" width="120">
+		</button>
+
+		<button type="button">
+			<img src="assets/images/blue-gem.jpg" height="120" width="120">
+		</button>
+
+		<button type="button">
+			<img src="assets/images/pink-gem.jpg" height="120" width="120">
+		</button>
 	
 	</div>
 
 <!-- //Your total score is: text -->
 	<div id="score-text">
-		Your total score is:
+		<h3>Your total score is:</h3>
 	</div>
 
 <!-- //Total score -->
-	<div>
-		<span id="score-number"></span>
+	<div id="score-number">
+		
 	</div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script type="text/javascript" src=".assets/javascript/game.js"></script>
 
+</container>
 </body>
 
 </html>
