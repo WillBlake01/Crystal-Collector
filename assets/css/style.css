@@ -8,7 +8,7 @@ body {
 
 #title {
 	height: 100px;
-	width: 320px;
+	width: 280px;
 	text-align: center;
 	color: white;
 	background-color: #A2531D;
@@ -25,7 +25,7 @@ body {
 
 #solution {
 	height: 160px;
-	width: 280px;
+	width: 260px;
 	background-color: red;
 	margin-bottom: 10px;
 	margin-right: 10px;
@@ -58,7 +58,7 @@ body {
 
 #score-text {
 	height: 40px;
-	width: 280px;
+	width: 260px;
 	background-color: brown;
 	margin-bottom: 10px;
 
@@ -66,6 +66,6 @@ body {
 
 #score-number {
 	height: 160px;
-	width: 280px;
+	width: 260px;
 	background-color: purple;
 }
