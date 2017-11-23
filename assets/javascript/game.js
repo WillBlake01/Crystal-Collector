@@ -29,6 +29,8 @@ var solution = solutionValue[Math.floor(Math.random()*solutionValue.length)];
 
 //Reset score to zero
 $("div#score-number").html("<h1>" + scoreReset + "</h1>");
+console.log(score);
+console.log(solution);
 
 //Assign a solution
 $("button").on("click", function pickSolution() {
@@ -43,8 +45,6 @@ $("button#red-gem").on("click", function redclick() {
 	$("div#score-number").html("<h1>" + score + "</h1>");
 	if (score > solution) {
 		$("div#result").html("<p>" + "You Lose!" + "</p>");
-	} else if (score = solution) {
-		$("div#result").html("<p>" + "You Win!" + "</p>");
 	}
 });
 
@@ -54,8 +54,6 @@ $("button#green-gem").on("click", function greenclick() {
 	$("div#score-number").html("<h1>" + score + "</h1>");
 	if (score > solution) {
 		$("div#result").html("<p>" + "You Lose!" + "</p>");
-	} else if (score = solution) {
-		$("div#result").html("<p>" + "You Win!" + "</p>");
 	}
 });
 
@@ -65,8 +63,6 @@ $("button#blue-gem").on("click", function blueclick() {
 	$("div#score-number").html("<h1>" + score + "</h1>");
 	if (score > solution) {
 		$("div#result").html("<p>" + "You Lose!" + "</p>");
-	} else if (score = solution) {
-		$("div#result").html("<p>" + "You Win!" + "</p>");
 	}
 });
 
@@ -76,8 +72,6 @@ $("button#pink-gem").on("click", function pinkclick() {
 	$("div#score-number").html("<h1>" + score + "</h1>");
 	if (score > solution) {
 		$("div#result").html("<p>" + "You Lose!" + "</p>");
-	} else if (score = solution) {
-		$("div#result").html("<p>" + "You Win!" + "</p>");
 	}
 });
 
