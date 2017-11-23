@@ -41,24 +41,44 @@ $("button#red-gem").on("click", function redclick() {
 	redValue = parseInt(redValue);
 	score = parseInt(score + redValue);
 	$("div#score-number").html("<h1>" + score + "</h1>");
+	if (score > solution) {
+		$("div#result").html("<p>" + "You Lose!" + "</p>");
+	} else if (score = solution) {
+		$("div#result").html("<p>" + "You Win!" + "</p>");
+	}
 });
 
 $("button#green-gem").on("click", function greenclick() {
 	greenValue = parseInt(greenValue);
 	score = parseInt(score + greenValue);
 	$("div#score-number").html("<h1>" + score + "</h1>");
+	if (score > solution) {
+		$("div#result").html("<p>" + "You Lose!" + "</p>");
+	} else if (score = solution) {
+		$("div#result").html("<p>" + "You Win!" + "</p>");
+	}
 });
 
 $("button#blue-gem").on("click", function blueclick() {
 	blueValue = parseInt(blueValue);
 	score = parseInt(score + blueValue);
 	$("div#score-number").html("<h1>" + score + "</h1>");
+	if (score > solution) {
+		$("div#result").html("<p>" + "You Lose!" + "</p>");
+	} else if (score = solution) {
+		$("div#result").html("<p>" + "You Win!" + "</p>");
+	}
 });
 
 $("button#pink-gem").on("click", function pinkclick() {
 	pinkValue = parseInt(pinkValue);
 	score = parseInt(score + pinkValue);
 	$("div#score-number").html("<h1>" + score + "</h1>");
+	if (score > solution) {
+		$("div#result").html("<p>" + "You Lose!" + "</p>");
+	} else if (score = solution) {
+		$("div#result").html("<p>" + "You Win!" + "</p>");
+	}
 });
 
 });
