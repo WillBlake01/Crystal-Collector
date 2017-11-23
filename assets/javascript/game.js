@@ -31,39 +31,34 @@ var solution = solutionValue[Math.floor(Math.random()*solutionValue.length)];
 $("div#score-number").html("<h1>" + scoreReset + "</h1>");
 
 //Assign a solution
-$("button").on("click", function pickSolution () {
+$("button").on("click", function pickSolution() {
 	solution = parseInt(solution);
 	$("div#solution").html("<h1>" + solution + "</h1>");
-	console.log(solution);
 });
 
 //Assign to buttons
-$("button#red-gem").on("click", function redclick () {
+$("button#red-gem").on("click", function redclick() {
 	redValue = parseInt(redValue);
 	score = parseInt(score + redValue);
 	$("div#score-number").html("<h1>" + score + "</h1>");
-	console.log(redValue);
 });
 
-$("button#green-gem").on("click", function greenclick () {
+$("button#green-gem").on("click", function greenclick() {
 	greenValue = parseInt(greenValue);
 	score = parseInt(score + greenValue);
 	$("div#score-number").html("<h1>" + score + "</h1>");
-	console.log(greenValue);
 });
 
-$("button#blue-gem").on("click", function blueclick () {
+$("button#blue-gem").on("click", function blueclick() {
 	blueValue = parseInt(blueValue);
 	score = parseInt(score + blueValue);
 	$("div#score-number").html("<h1>" + score + "</h1>");
-	console.log(blueValue);
 });
 
-$("button#pink-gem").on("click", function pinkclick () {
+$("button#pink-gem").on("click", function pinkclick() {
 	pinkValue = parseInt(pinkValue);
 	score = parseInt(score + pinkValue);
 	$("div#score-number").html("<h1>" + score + "</h1>");
-	console.log(pinkValue);
 });
 
 });
