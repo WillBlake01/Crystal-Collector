@@ -4,6 +4,7 @@
 
 body {
 	background-image: url("../images/intersection.png");
+	max-height: 1200px;
 }
 
 .centered {
@@ -41,7 +42,7 @@ body {
 	background-color: red;
 	color: white;
 	margin-right: 10px;
-	padding-left: 10px;
+	padding: 10px;
 	float: left;
 }
 
@@ -55,9 +56,25 @@ body {
 }
 
 #pics {
-	clear: both;
-	height: 128px;
-	width: 556px;
+	height: 120px;
+	width: 480px;
+	margin-bottom: 10px;
+}
+
+#crystal-area {
+	height: 120px;
+	width: 480px;
+}
+
+.crystals-button {
+	display: inline;
+}
+
+.crystal-img {
+	height: 120px;
+	width: 120px;
+	border: solid;
+	border-color: lightblue;
 }
 
 #result {
@@ -68,15 +85,18 @@ body {
 #score-text {
 	height: 40px;
 	width: 260px;
-	padding-left: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
 	background-color: purple;
 	color: white;
+	font-weight: bold;
 }
 
-#score-number {
+#score-area {
 	height: 160px;
 	width: 260px;
-	padding-left: 10px;
+	padding-top: 0px;
+	padding: 10px;
 	background-color: purple;
 	color: white;
 }
